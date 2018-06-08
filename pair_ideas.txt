@@ -1,0 +1,21 @@
+Currently:
+
+gameOver is triggered once Super Chris is hit but it should really be used for when the game is truly over or renamed to something more correct.
+
+The score doesn't reset after Super Chris is hit.  If the score should reset on hit or not depeneds on other parts of the game, such as if the game is over after being hit only once or if the idea of having multiple lives is added.
+
+
+Possible things to pair on:
+
+Create text that states the game is over and is displayed when the game ends.
+
+Lives don't really serve any purpose right now.  They aren't decreased when hit and if they were, there is no logic in place for events, such as the game being over, to happen when the number of lives remaining is zero.
+
+Should the game end after 1 death?  If so, the score should be reset once Super Chris is hit.  If not, the score should persist until the game is over.
+
+Life counter at 0 ends the game?  
+
+Institute an extra life earned after every X points gained?
+
+Decrease life counter.
+
