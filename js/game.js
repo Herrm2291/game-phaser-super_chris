@@ -161,7 +161,7 @@ function create() {
 	player.setCollideWorldBounds(true);
 
 	// Animations created for Super Chris which are based on movement direction
-	if (!this.anims.anims.entries.left) {
+	if (!this.anims.get('left')) {
 		this.anims.create({
 			key: 'left',
 			frames: this.anims.generateFrameNumbers('superChris'),
@@ -170,7 +170,7 @@ function create() {
 		});
 	}
 
-	if (!this.anims.anims.entries.turn) {
+	if (!this.anims.get('turn')) {
 		this.anims.create({
 			key: 'turn',
 			frames: [{ key: 'superChris' }],
@@ -178,7 +178,7 @@ function create() {
 		});
 	}
 
-	if (!this.anims.anims.entries.right) {
+	if (!this.anims.get('right')) {
 		this.anims.create({
 			key: 'right',
 			frames: this.anims.generateFrameNumbers('superChris'),
